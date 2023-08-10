@@ -11,7 +11,24 @@ class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:
+      child: Container(
+        child:Row(
+          children: [
+            Column(
+              children:[
+
+              ]
+            ),
+            Container(
+              width: 45,
+              height:45,
+
+              
+            )
+          ],
+  
+        )
+      )
     );
   }
 }
