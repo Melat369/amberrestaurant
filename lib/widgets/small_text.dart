@@ -24,6 +24,7 @@ class SmallText extends StatelessWidget {
     return Text(
       text,
       //taking care of the over flow
+    
       style: TextStyle(
         fontFamily: 'Roboto',
         color: color,
