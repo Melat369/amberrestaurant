@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/colors.dart';
+
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({super.key});
 
@@ -27,16 +29,17 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 Text('City')
               ]
             ) , 
-            Container(
+           Center( 
+            child: Container(
               width: 45,
               height:45,
               child: Icon(Icons.search, color: Colors.white),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: Colors.pink, 
+                color: AppColors.mainColor, 
               )
               
-            )
+            ),)
           ], 
   
         )
