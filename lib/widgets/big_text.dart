@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class BigText extends StatelessWidget {
-  final Color? color;
+  Color? color;
   //pass color variable it is optional
   final String text;
   //pass in the text to be written
@@ -12,7 +12,7 @@ class BigText extends StatelessWidget {
   TextOverflow overFlow;
   //to tolerate long food names
   BigText({super.key,
-  this.color,
+  this.color = const Color(0xffcc7c5) ,
   //setting default size
   this.size=20,
   required this.text,
