@@ -14,7 +14,7 @@ class BigText extends StatelessWidget {
   TextOverflow overFlow;
   //to tolerate long food names
   BigText({super.key,
-  this.color = const Color(0xff89dad0) ,
+  this.color = const Color(0xffcc7c5),
   //setting default size
   this.size=20,
   required this.text,

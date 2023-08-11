@@ -1,3 +1,4 @@
+import 'package:amberrestaurant/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
@@ -27,7 +28,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
             Column(
               children:[
                  BigText( text:"Ethiopia", color: AppColors.mainColor),
-
+                Row(children: [
+                  SmallText(text: "Addis Ababa", color: Colors.black54,),
+                  Icon(Icons.arrow_drop_down_rounded)
+                ],)
                 
               ]
             ) , 
