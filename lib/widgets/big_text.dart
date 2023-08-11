@@ -9,12 +9,14 @@ class BigText extends StatelessWidget {
   //pass in the text to be written
   double size;
   //for the dynamic text size
-  TextOverflow overflow;
+  TextOverflow overFlow;
   //to tolerate long food names
-  const BigText({super.key,
+  BigText({super.key,
   this.color,
+  //setting default size
+  this.size=20,
   required this.text,
-  this.overflow = TextOverflow.ellipsis
+  this.overFlow = TextOverflow.ellipsis
   //this is saying that if the text is overflowing show the too big
   //default 3 dots to examplify that there is an overflow
   });
@@ -22,6 +24,13 @@ class BigText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
+      text,
+      overflow: overFlow,
+      style: TextStyle(
+        fontFamily: 'Roboto',
+        color: color,
+        fontWeight: FontWeight.w400
+      ),
 
     );
   }
