@@ -14,6 +14,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height:320,
       child: PageView.builder(
         //this will count the number of items that
         //will be scrolling sideways in the resturant app
