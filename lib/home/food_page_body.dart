@@ -14,6 +14,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
+
+      //specifying the height is mandatory in order for the 
+      //horizontal scrolling to work
       height:320,
       child: PageView.builder(
         //this will count the number of items that
@@ -34,7 +37,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       margin:EdgeInsets.only(left:5, right:5),
       decoration:BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        color: AppColors.mainColor
+        color: index.isEven?AppColors.mainColor: AppColors.iconColor2,
+        image: DecorationImage(
+          fit:BoxFit.cover,
+          image: AssetImage(
+            "assets/images/food1.jpg"
+          )
+        )
       )
     );
   }
