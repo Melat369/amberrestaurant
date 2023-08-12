@@ -1,5 +1,6 @@
 //creating a stateful class
 
+import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -28,7 +29,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   }
   Widget _buildPageItem(int index){
     return Container(
-      
+      height:220,
+      margin:EdgeInsets.only(left:5, right:5),
+      decoration:BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: AppColors.mainColor
+      )
     );
   }
 }
