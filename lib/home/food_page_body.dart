@@ -1,15 +1,34 @@
 //creating a stateful class
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+import 'package:flutter/material.dart';
+
+class FoodPageBody extends StatefulWidget {
+  const FoodPageBody({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<FoodPageBody> createState() => _FoodPageBodyState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _FoodPageBodyState extends State<FoodPageBody> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: PageView.builder(
+        //this will count the number of items that
+        //will be scrolling sideways in the resturant app
+        itemCount:5,
+        //from 0-4 refering to indexes
+        itemBuilder: (context,position){
+        //here we have a space bn the items and in order to achieve
+        //that the item builder should return a function not a container
+
+        return _buildPageItem(position);
+      })
+    );
+  }
+  Widget _buildPageItem(int index){
+    return Container(
+      
+    );
   }
 }
