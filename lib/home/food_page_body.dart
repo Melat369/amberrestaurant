@@ -67,7 +67,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         color: Colors.white,
         
       ),
-     
+     child:Container(
+      padding:EdgeInsets.only(top:10,left:15, right:15),
+
+      child:Column(
+        children:[]
+      )
+     )
     )
         )
   
