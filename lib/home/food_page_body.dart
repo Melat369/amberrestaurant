@@ -32,7 +32,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     );
   }
   Widget _buildPageItem(int index){
-    return Container(
+    return Stack(
+      children: [
+         Container(
       height:220,
       margin:EdgeInsets.only(left:5, right:5),
       decoration:BoxDecoration(
@@ -45,6 +47,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           )
         )
       )
-    );
-  }
+    )
+  
+      ],
+    )
+    }
 }
