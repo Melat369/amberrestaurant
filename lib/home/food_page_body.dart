@@ -3,6 +3,9 @@
 import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/big_text.dart';
+
+
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({super.key});
 
@@ -66,8 +69,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       padding: EdgeInsets.only(top:10, left:15, right:15),
       child: Column(
         children:[
+          BigText(text:"Beye-Aynet")
 
-          
         ]
       )
 
