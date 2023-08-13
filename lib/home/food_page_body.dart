@@ -11,6 +11,10 @@ class FoodPageBody extends StatefulWidget {
 }
 
 class _FoodPageBodyState extends State<FoodPageBody> {
+ //adding controller in order for the sliding images to make
+ //images on the side appear partially
+ PageController pageController = PageController(viewportFraction:0.85);
+ 
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +22,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       //specifying the height is mandatory in order for the 
       //horizontal scrolling to work
       height:320,
+      color: Colors.amber,
       child: PageView.builder(
+        controller: pageController,
         //this will count the number of items that
         //will be scrolling sideways in the resturant app
         itemCount:5,
@@ -47,9 +53,28 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           )
         )
       )
+    ),
+         Container(
+      height:140,
+      margin:EdgeInsets.only(left:30, right:30, bottom:10),
+      decoration:BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: Colors.white,
+        
+      ),
+      child: Container(
+      padding: EdgeInsets.only(top:10, left:15, right:15),
+      child: Column(
+        children:[
+
+          
+        ]
+      )
+
+      )
     )
   
-      ],
-    )
+      ], 
+    );
     }
 }
