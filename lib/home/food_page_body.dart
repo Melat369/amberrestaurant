@@ -72,11 +72,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
       child:Column(
         children:[
-          BigText(text: "Beye-Aynet"),
+          BigText(text:'beyaynet'),
           SizedBox(height:10),
           Row(
             children:[
               Wrap(
+                children:
+                  List.generate(5,(index)=> Icon(Icons.star,size: 18, color:AppColors.mainColor)),
                 
               )
             ]
