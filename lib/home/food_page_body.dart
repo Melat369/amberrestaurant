@@ -57,7 +57,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         )
       )
     ),
-         Container(
+        Align(
+          alignment: Alignment.bottomCenter,
+           child: Container(
       height:140,
       margin:EdgeInsets.only(left:30, right:30, bottom:10),
       decoration:BoxDecoration(
@@ -65,17 +67,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         color: Colors.white,
         
       ),
-      child: Container(
-      padding: EdgeInsets.only(top:10, left:15, right:15),
-      child: Column(
-        children:[
-          BigText(text:"Beye-Aynet")
-
-        ]
-      )
-
-      )
+     
     )
+        )
   
       ], 
     );
