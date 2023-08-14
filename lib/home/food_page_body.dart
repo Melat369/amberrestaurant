@@ -20,6 +20,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   
   var _currPageValue = 0.0;
+  double _scaleFactor = 0.8;
+  double _height = 220;
+  
+
   @override
   void initState(){
     super.initState();
@@ -27,8 +31,21 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     pageController.addListener((){
       setState(() {
         _currPageValue=pageController.page!;
+        
+
       });
     });
+  }
+
+  @override
+
+  //when we leave the page we dont want it to be active and 
+  //thus we use the despose method and is also efficient in 
+  //memory management
+
+  void dispose() {
+     pageController.dispose();
+   
   }
 
   @override
@@ -54,7 +71,26 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   }
 
   Widget _buildPageItem(int index) {
-    return Stack(
+     Matrix4 matrix = new Matrix4.identity(); 
+     if (index == _currPageValue.floor()){
+      var currScale = 1 -(_currPageValue - index) * (1-_scaleFactor);
+      var currTrans = _height *(1-currScale)/2;
+      
+      matrix = Matrix4.diagonal3Values(1,currScale,1)..setTranslationRaw(0, currTrans, 0);
+     }
+     else if(index == _currPageValue.floor()+1){
+      var currScale = _scaleFactor + (_currPageValue - index+1)*(1-_scaleFactor);
+      matrix = Matrix4.diagonal3Values(1,currScale,1);
+      var currTrans=  _height *(1-currScale)/2;
+      matrix = Matrix4.diagonal3Values(1,currScale,1)..setTranslationRaw(0, currTrans, 0);
+
+
+
+     }
+
+   //matrix4 is an api form flutter
+    return Transform(transform: matrix,
+    child:Stack(
       children: [
         Container(
             height: 220,
@@ -129,6 +165,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
                         ]))))
       ],
+    )
+ 
     );
   }
 }
