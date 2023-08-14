@@ -29,7 +29,7 @@ class SmallText extends StatelessWidget {
     
       style: TextStyle(
         fontFamily: 'poppins',
-        color: AppColors.mainColor,
+        color: AppColors.titleColor,
         fontSize: size,
         
         height: height

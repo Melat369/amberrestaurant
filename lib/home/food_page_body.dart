@@ -4,6 +4,7 @@ import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/big_text.dart';
+import '../widgets/icon_and_text.dart';
 import '../widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -25,7 +26,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //specifying the height is mandatory in order for the
         //horizontal scrolling to work
         height: 320,
-        color: Colors.amber,
+       // color: Colors.amber,
         child: PageView.builder(
             controller: pageController,
             //this will count the number of items that
@@ -59,7 +60,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 height: 120,
                 margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                 ),
                 child: Container(
@@ -86,7 +87,34 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             ],
                           )
                           ,
-                          SizedBox(height:10),
+                          SizedBox(height:20),
+                          Row(
+                      children:[
+
+                            IconAndTextWidget(
+                               icon:Icons.circle_sharp,
+
+                               text:"Normal",
+                             
+                               iconColor:AppColors.iconColor1 ),
+
+                             IconAndTextWidget(
+                               icon:Icons.location_on,
+
+                               text:"1.7km",
+                             
+                               iconColor:AppColors.mainColor ),
+
+                             IconAndTextWidget(
+                               icon:Icons.timer_sharp,
+
+                               text:"32min",
+                             
+                               iconColor:AppColors.iconColor2 )
+                         
+                                                  
+                          ],)
+
                         ]))))
       ],
     );

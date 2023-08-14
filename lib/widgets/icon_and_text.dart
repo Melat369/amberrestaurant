@@ -4,12 +4,10 @@ import 'package:flutter/material.dart';
 class IconAndTextWidget extends StatelessWidget {
   final IconData icon;
   final String text;
-  final Color color;
   final Color iconColor;
   const IconAndTextWidget({super.key,
    required this.icon,
   required this.text,
-  required this.color,
   required this.iconColor,
   });
 
@@ -19,7 +17,7 @@ class IconAndTextWidget extends StatelessWidget {
       children: [
         Icon(icon, color:iconColor,),
         SizedBox(width:5),
-        SmallText(text: text, color:color),
+        SmallText(text: text,),
       ],
     );
   }
