@@ -4,6 +4,7 @@ import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/big_text.dart';
+import '../widgets/small_text.dart';
 
 
 class FoodPageBody extends StatefulWidget {
@@ -60,7 +61,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         Align(
           alignment: Alignment.bottomCenter,
            child: Container(
-      height:140,
+      height:130,
       margin:EdgeInsets.only(left:30, right:30, bottom:10),
       decoration:BoxDecoration(
         borderRadius: BorderRadius.circular(30),
@@ -68,17 +69,26 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         
       ),
      child:Container(
-      padding: EdgeInsets.only(top:10, left:15, right:15),
+      padding: EdgeInsets.only(top:15, left:15, right:15),
       child:Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children:[
           BigText(text: "Beyaynet"),
           SizedBox(height:10),
           Row(
             children:[
-              Wrap(
-                children:
+              Wrap(children:
                   List.generate(5,(index)=> Icon(Icons.star,size: 18, color:AppColors.mainColor)),
                 
+              ),
+              SingleChildScrollView(
+                child: 
+              SizedBox(width: 10),
+            SmallText(text:"1246"),
+              SizedBox(width:10),
+              SmallText(text:"1246"),
+              SizedBox(width:10),
+              SmallText(text:"Comments"),
               )
             ],
           )

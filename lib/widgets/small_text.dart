@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../utils/colors.dart';
+
 class SmallText extends StatelessWidget {
   Color? color;
   //pass color variable it is optional
@@ -26,8 +28,8 @@ class SmallText extends StatelessWidget {
       //taking care of the over flow
     
       style: TextStyle(
-        fontFamily: 'Roboto',
-        color: color,
+        fontFamily: 'poppins',
+        color: AppColors.mainColor,
         fontSize: size,
         
         height: height
