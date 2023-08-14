@@ -85,6 +85,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                               SmallText(text: "Comments"),
                             ],
                           )
+                          ,
+                          SizedBox(height:10),
                         ]))))
       ],
     );
