@@ -1,5 +1,6 @@
 
 
+import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class BigText extends StatelessWidget {
@@ -31,8 +32,8 @@ class BigText extends StatelessWidget {
       maxLines: 1,
       overflow: overFlow,
       style: TextStyle(
-        fontFamily: 'Roboto',
-        color: color,
+        fontFamily: 'Poppins',
+        color:AppColors.titleColor,
         fontWeight: FontWeight.w400,
         fontSize: size,
       ),

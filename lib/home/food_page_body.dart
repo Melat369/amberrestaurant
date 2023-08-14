@@ -68,11 +68,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         
       ),
      child:Container(
-      padding:EdgeInsets.only(top:10,left:15, right:15),
-
+      padding: EdgeInsets.only(top:10, left:15, right:15),
       child:Column(
         children:[
-          BigText(text:'beyaynet'),
+          BigText(text: "Beyaynet"),
           SizedBox(height:10),
           Row(
             children:[
@@ -81,7 +80,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   List.generate(5,(index)=> Icon(Icons.star,size: 18, color:AppColors.mainColor)),
                 
               )
-            ]
+            ],
           )
         ]
       )
