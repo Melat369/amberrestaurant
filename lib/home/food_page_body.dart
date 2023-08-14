@@ -18,6 +18,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   //adding controller in order for the sliding images to make
   //images on the side appear partially
   PageController pageController = PageController(viewportFraction: 0.85);
+  
+  var _currPageValue = 0.0;
+  @override
+  void initState(){
+    
+  }
 
   @override
   Widget build(BuildContext context) {
