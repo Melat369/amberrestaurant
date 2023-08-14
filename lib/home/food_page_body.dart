@@ -22,7 +22,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   var _currPageValue = 0.0;
   @override
   void initState(){
-    
+    super.initState();
+    //attaching a listener for this page controller
+    pageController.addListener((){
+
+    });
   }
 
   @override
