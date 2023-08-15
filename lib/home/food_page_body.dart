@@ -86,7 +86,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
 
 
-     }
+     } 
       else if(index == _currPageValue.floor()-1){
       var currScale = 1 -(_currPageValue - index) * (1-_scaleFactor);
       var currTrans = _height *(1-currScale)/2;
