@@ -4,6 +4,7 @@ import 'package:amberrestaurant/utils/colors.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/dimensions.dart';
 import '../widgets/big_text.dart';
 import '../widgets/icon_and_text.dart';
 import '../widgets/small_text.dart';
@@ -22,7 +23,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   
   var _currPageValue = 0.0;
   double _scaleFactor = 0.8;
-  double _height = 220;
+  double _height = Dimensions.pageViewContainer;
   int dotsCount = 5;
   int? position ;
   double? size;
@@ -130,7 +131,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     child:Stack(
       children: [
         Container(
-            height: 220,
+            height:  Dimensions.pageViewContainer,
             margin: EdgeInsets.only(left: 10, right: 10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
@@ -142,7 +143,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-                height: 120,
+                height: Dimensions.pageViewTextContainer,
                 margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),

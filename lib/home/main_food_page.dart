@@ -22,7 +22,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
            Container(
      //the child basically represents the header section
       child: Container(
-        margin: EdgeInsets.only(top: 45, bottom :15),
+        margin: EdgeInsets.only(top: 45, bottom :15, right: 10),
         padding: EdgeInsets.only(left:20, bottom:20 ),
        child:Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
