@@ -1,6 +1,7 @@
 //creating a stateful class
 
 import 'package:amberrestaurant/utils/colors.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/big_text.dart';
@@ -22,7 +23,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   var _currPageValue = 0.0;
   double _scaleFactor = 0.8;
   double _height = 220;
-  
+  int dotsCount = 5;
+  int? position ;
+  double? size;
+  double? activeSize;
+  double? activeShape;
+
+
 
   @override
   void initState(){
@@ -50,8 +57,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(
+      children: [
       Container(
+
 
         //specifying the height is mandatory in order for the
         //horizontal scrolling to work
@@ -69,8 +78,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
               return _buildPageItem(position);
             })),
-  
-     DotsIndicator(
+      
+      DotsIndicator(
   dotsCount: 5,
   position: _currPageValue,
   decorator: DotsDecorator(
@@ -79,6 +88,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
   ),
 )
+  
     ],);}
 
   Widget _buildPageItem(int index) {
@@ -211,7 +221,4 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     );
   }
   
-  DotsDecorator({required Size size, required Size activeSize, required RoundedRectangleBorder activeShape}) {}
-  
-  DotsIndicator({required int dotsCount, required double position, required decorator}) {}
-}
+  }
