@@ -50,7 +50,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Column(children: [
+      Container(
 
         //specifying the height is mandatory in order for the
         //horizontal scrolling to work
@@ -67,8 +68,18 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               //that the item builder should return a function not a container
 
               return _buildPageItem(position);
-            }));
-  }
+            })),
+  
+     DotsIndicator(
+  dotsCount: 5,
+  position: _currPageValue,
+  decorator: DotsDecorator(
+    size: const Size.square(9.0),
+    activeSize: const Size(18.0, 9.0),
+    activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+  ),
+)
+    ],);}
 
   Widget _buildPageItem(int index) {
      Matrix4 matrix = new Matrix4.identity(); 
@@ -199,4 +210,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
  
     );
   }
+  
+  DotsDecorator({required Size size, required Size activeSize, required RoundedRectangleBorder activeShape}) {}
+  
+  DotsIndicator({required int dotsCount, required double position, required decorator}) {}
 }
