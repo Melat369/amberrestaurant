@@ -85,6 +85,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   decorator: DotsDecorator(
     size: const Size.square(9.0),
     activeSize: const Size(18.0, 9.0),
+    activeColor: AppColors.mainColor,
+    
     activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
   ),
 )
