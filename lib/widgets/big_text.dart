@@ -3,6 +3,8 @@
 import 'package:amberrestaurant/utils/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/dimensions.dart';
+
 class BigText extends StatelessWidget {
   Color? color;
   //pass color variable it is optional
@@ -35,7 +37,7 @@ class BigText extends StatelessWidget {
         fontFamily: 'Poppins',
         color:AppColors.titleColor,
         fontWeight: FontWeight.w400,
-        fontSize: size,
+        fontSize: Dimensions.font20,
       ),
 
     );

@@ -65,7 +65,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
         //specifying the height is mandatory in order for the
         //horizontal scrolling to work
-        height: 320,
+        height: Dimensions.pageView,
        // color: Colors.amber,
         child: PageView.builder(
             controller: pageController,
@@ -165,12 +165,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   ]
                 ),
                 child: Container(
-                    padding: EdgeInsets.only(top: 15, left: 15, right: 15),
+                    padding: EdgeInsets.only(top: Dimensions.height15, left: Dimensions.height15, right: Dimensions.height15),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           BigText(text: "Beyaynet"),
-                          SizedBox(height: 10),
+                          SizedBox(height: Dimensions.height10),
                           Row(
                             children: [
                               Wrap(
@@ -183,12 +183,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                               SmallText(text: "4.5"),
                               SizedBox(width: 10),
                               SmallText(text: "1287"),
-                              SizedBox(width: 10),
+                              SizedBox(width: Dimensions.height10),
                               SmallText(text: "Comments"),
                             ],
                           )
                           ,
-                          SizedBox(height:20),
+                          SizedBox(height:Dimensions.height20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children:[
