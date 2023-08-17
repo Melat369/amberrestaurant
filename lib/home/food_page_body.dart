@@ -119,6 +119,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       Container(
         height: 700,
         child:ListView.builder(
+        physics:BouncingScrollPhysics(),
+        shrinkWrap: true,
         itemCount:10,
         itemBuilder:(context,index){
           return Container(
@@ -129,7 +131,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   width:120,
                   height:120,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(Dimensions.radius20),
+                    borderRadius: BorderRadius.circular(Dimensions.radius30
+                    ),
                     color: Colors.white38,
                     image:DecorationImage(
                       image: AssetImage(
