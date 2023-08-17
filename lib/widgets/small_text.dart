@@ -14,7 +14,7 @@ class SmallText extends StatelessWidget {
   double height;
   //the constructor
   SmallText({super.key,
-  this.color = const Color(0xffcc7c5) ,
+  this.color, //= const Color(0xffcc7c5) ,
   //setting default size
   this.size=10,
   this.height=1.2,
@@ -29,9 +29,8 @@ class SmallText extends StatelessWidget {
     
       style: TextStyle(
         fontFamily: 'poppins',
-        color: AppColors.titleColor,
         fontSize: size,
-        
+        color: color,
         height: height
       ),
 
