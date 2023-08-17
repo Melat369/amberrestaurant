@@ -132,7 +132,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
             height:  Dimensions.pageViewContainer,
-            margin: EdgeInsets.only(left: 10, right: 10),
+            margin: EdgeInsets.only(left: Dimensions.width10, right: Dimensions.width10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radius30),
                 color:
@@ -144,7 +144,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             alignment: Alignment.bottomCenter,
             child: Container(
                 height: Dimensions.pageViewTextContainer,
-                margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+                margin: EdgeInsets.only(left: Dimensions.width30, right: Dimensions.width30, bottom: Dimensions.width30),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(Dimensions.radius20),
                   color: Colors.white,
