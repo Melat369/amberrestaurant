@@ -32,7 +32,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               children:[
                  BigText( text:"Ethiopia", color: AppColors.mainColor),
                 Row(children: [
-                  SmallText(text: "Addis Ababa", color: Colors.black54,),
+                  SmallText(text: "Addis Ababa", color:AppColors.titleColor,),
                   Icon(Icons.arrow_drop_down_rounded)
                 ],)
                 
