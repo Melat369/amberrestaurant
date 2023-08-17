@@ -119,22 +119,26 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       Container(
         height: 700,
         child:ListView.builder(
-        physics:BouncingScrollPhysics(),
-        shrinkWrap: true,
+        physics:NeverScrollableScrollPhysics(),
+        //shrinkWrap: true,
         itemCount:10,
         itemBuilder:(context,index){
           return Container(
-            margin: EdgeInsets.only(left:Dimensions.width20, right:Dimensions.width20),
+            margin: EdgeInsets.only(left:Dimensions.width20, right:Dimensions.width20, bottom:Dimensions.height10),
             child:Row(
               children:[
-                Container(
+        //image section
+        
+                  Container(
                   width:120,
                   height:120,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(Dimensions.radius30
+                    borderRadius: BorderRadius.circular(Dimensions.radius20
                     ),
                     color: Colors.white38,
                     image:DecorationImage(
+                      fit: BoxFit.cover,
+
                       image: AssetImage(
                         "assets/images/food5.jpeg"
                       )
@@ -142,6 +146,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
                   )
                 ),
+              
+              //text container inside the row
+              Container(
+                
+              )
               ]
             ),
           );
