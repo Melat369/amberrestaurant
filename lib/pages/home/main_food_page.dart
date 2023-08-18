@@ -1,9 +1,9 @@
 import 'package:amberrestaurant/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/colors.dart';
-import '../utils/dimensions.dart';
-import '../widgets/big_text.dart';
+import '../../utils/colors.dart';
+import '../../utils/dimensions.dart';
+import '../../widgets/big_text.dart';
 import 'food_page_body.dart';
 
 class MainFoodPage extends StatefulWidget {

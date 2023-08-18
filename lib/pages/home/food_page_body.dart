@@ -4,10 +4,10 @@ import 'package:amberrestaurant/utils/colors.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/dimensions.dart';
-import '../widgets/big_text.dart';
-import '../widgets/icon_and_text.dart';
-import '../widgets/small_text.dart';
+import '../../utils/dimensions.dart';
+import '../../widgets/big_text.dart';
+import '../../widgets/icon_and_text.dart';
+import '../../widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({super.key});
