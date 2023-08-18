@@ -165,8 +165,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     BigText(text: "Nutritious Genfo Meal of Ethiopia"),
-                    SmallText(text: "with Ethiopian touch",)
-                   , Row(
+                    SizedBox(height:Dimensions.height10 ),
+                    SmallText(text: "With an Ethiopian touch",)
+                    ,SizedBox(height:Dimensions.height10 ),
+
+                    Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children:[
 
