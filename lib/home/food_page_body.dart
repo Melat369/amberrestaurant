@@ -149,7 +149,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               
               //text container inside the row
               Container(
-                
+
               )
               ]
             ),
