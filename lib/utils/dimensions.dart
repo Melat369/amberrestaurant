@@ -30,4 +30,9 @@ static double width10 = screenWidth/72; ///720/10
 
 //for icon size
 static double iconsize24 = screenHeight/30;
+
+//List view size
+static double listViewImg = screenWidth/3.25;
+static double listViewTextCountSize = screenWidth/3.9;
+
 }

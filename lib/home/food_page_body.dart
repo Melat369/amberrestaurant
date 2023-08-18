@@ -130,8 +130,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //image section
         
                   Container(
-                  width:120,
-                  height:120,
+                  width:Dimensions.listViewImg,
+                  height:Dimensions.listViewImg,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(Dimensions.radius20
                     ),
@@ -150,7 +150,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               //text container inside the row
               Expanded(
                 child:Container(
-                  height:100,
+                  height:Dimensions.listViewTextCountSize,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topRight:Radius.circular(Dimensions.radius20),
