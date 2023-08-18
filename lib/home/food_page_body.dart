@@ -148,8 +148,27 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 ),
               
               //text container inside the row
-              Container(
+              Expanded(
+                child:Container(
+                  height:100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topRight:Radius.circular(Dimensions.radius20),
+                    bottomRight: Radius.circular(Dimensions.radius20),
+                  ),
+                                    color: Colors.white,
+              ),
+               child: Padding(
+                padding:EdgeInsets.only(left: Dimensions.width10),
+                child: Column(
+                  children: [
+                    BigText(text: "Nutritious Genfo Meal"),
 
+                  ]
+                  ,)
+                
+                )
+                )
               )
               ]
             ),
