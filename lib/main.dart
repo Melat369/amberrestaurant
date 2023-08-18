@@ -1,3 +1,4 @@
+import 'package:amberrestaurant/pages/food/popular_food_detail.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/home/main_food_page.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MainFoodPage(),
+      home: PopularFoodDetail(),
+      
     );
   }
 }
