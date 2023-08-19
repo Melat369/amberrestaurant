@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../utils/dimensions.dart';
 import '../../widgets/app_icon.dart';
+import '../../utils/colors.dart';
+
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({super.key});
@@ -43,7 +44,20 @@ class PopularFoodDetail extends StatelessWidget {
               ],
 
             )
-          ,)
+          ,),
+          Positioned(
+            left:0,
+            right:0,
+            top:Dimensions.popularFoodImgSize,
+            child:Container(
+               padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20,top: Dimensions.height20),
+               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.radius20),
+                color:AppColors.iconColor2,
+               ),
+            )
+
+          )
         ],
       )
       
