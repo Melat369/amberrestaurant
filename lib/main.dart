@@ -6,9 +6,15 @@ import 'pages/home/main_food_page.dart';
 import 'package:get/get.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-    SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white),
-  );
+ 
+    SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarIconBrightness: Brightness.dark,
+    ),
+    );
  
  runApp(const MyApp());
 }

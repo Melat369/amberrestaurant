@@ -30,6 +30,7 @@ class PopularFoodDetail extends StatelessWidget {
             )
           ),
           Positioned(
+            top:Dimensions.height45,
             left:Dimensions.width20,
             right:Dimensions.width20,
             
