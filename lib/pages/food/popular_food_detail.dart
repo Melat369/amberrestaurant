@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../utils/dimensions.dart';
+import '../../widgets/app_icon.dart';
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({super.key});
@@ -33,7 +34,10 @@ class PopularFoodDetail extends StatelessWidget {
             right:Dimensions.width20,
             
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+              AppIcon(icon: Icons.arrow_back_ios),
+              AppIcon(icon: Icons.shopping_cart_outlined),
 
               ],
 
