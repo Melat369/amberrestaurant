@@ -63,59 +63,7 @@ class PopularFoodDetail extends StatelessWidget {
                                 color:AppColors.iconColor2,
 
                ),
-               child:Column(
-                
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          BigText(text: "Beyaynet"),
-                          SizedBox(height: Dimensions.height10),
-                          Row(
-                            children: [
-                              Wrap(
-                                children: List.generate(
-                                    5,
-                                    (index) => Icon(Icons.star,
-                                        size: 18, color: AppColors.mainColor)),
-                              ),
-                              SizedBox(width: 10),
-                              SmallText(text: "4.5"),
-                              SizedBox(width: 10),
-                              SmallText(text: "1287"),
-                              SizedBox(width: Dimensions.height10),
-                              SmallText(text: "Comments"),
-                            ],
-                          )
-                          ,
-                          SizedBox(height:Dimensions.height20),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children:[
-
-                            IconAndTextWidget(
-                               icon:Icons.circle_sharp,
-
-                               text:"Normal",
-                             
-                               iconColor:AppColors.iconColor1 ),
-
-                             IconAndTextWidget(
-                               icon:Icons.location_on,
-
-                               text:"1.7km",
-                             
-                               iconColor:AppColors.mainColor ),
-
-                             IconAndTextWidget(
-                               icon:Icons.timer_sharp,
-
-                               text:"32min",
-                             
-                               iconColor:AppColors.iconColor2 )
-                         
-                                                  
-                          ],)
-
-                        ]),
+               child:
             )
 
           )
