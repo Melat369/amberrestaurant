@@ -64,7 +64,7 @@ class PopularFoodDetail extends StatelessWidget {
                                 color:AppColors.iconColor2,
 
                ),
-               child: AppColumn(),
+               child: AppColumn(text: 'Ethiopian Variety',),
             )
 
           )
