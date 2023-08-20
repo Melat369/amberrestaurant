@@ -17,9 +17,10 @@ class Dimensions{
 
  
  static double font20 = screenHeight/36;
+ static double font26 = screenHeight/27.7;
+ 
  static double radius20 = screenHeight/36;
-  static double radius15 = screenHeight/48;
-
+ static double radius15 = screenHeight/48;
  static double radius30 = screenHeight/24;
 
 static double width10 = screenWidth/72; ///720/10

@@ -64,7 +64,15 @@ class PopularFoodDetail extends StatelessWidget {
                                 color:AppColors.iconColor2,
 
                ),
-               child: AppColumn(text: 'Ethiopian Variety',),
+            
+               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                 AppColumn(text: 'Ethiopian Variety',),
+                 SizedBox(height: Dimensions.height20,),
+                 BigText(text: "Introduction")
+
+               ]),
             )
 
           )
