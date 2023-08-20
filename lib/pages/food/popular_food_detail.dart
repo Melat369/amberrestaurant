@@ -15,6 +15,7 @@ class PopularFoodDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.iconColor2,
       body:Stack(
         children: [
           Positioned(
