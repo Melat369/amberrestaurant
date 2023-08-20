@@ -53,15 +53,18 @@ class PopularFoodDetail extends StatelessWidget {
             right:0,
             top:Dimensions.popularFoodImgSize-20,
             child:Container(
+              
                padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20,top: Dimensions.height20),
                decoration: BoxDecoration(
                 borderRadius: BorderRadius.only( 
                   topRight: Radius.circular(Dimensions.radius20),
                   topLeft: Radius.circular(Dimensions.radius20),
                 ),
-                color:AppColors.iconColor2,
+                                color:AppColors.iconColor2,
+
                ),
                child:Column(
+                
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           BigText(text: "Beyaynet"),
