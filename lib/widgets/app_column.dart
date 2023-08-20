@@ -7,7 +7,8 @@ import 'big_text.dart';
 import 'icon_and_text.dart';
 
 class AppColumn extends StatelessWidget {
-  const AppColumn({super.key});
+  final String text;
+  const AppColumn({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class AppColumn extends StatelessWidget {
                 
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          BigText(text: "Beyaynet"),
+                          BigText(text: text),
                           SizedBox(height: Dimensions.height10),
                           Row(
                             children: [

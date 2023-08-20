@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../utils/dimensions.dart';
+import '../../widgets/app_column.dart';
 import '../../widgets/app_icon.dart';
 import '../../utils/colors.dart';
 import '../../widgets/big_text.dart';
@@ -63,7 +64,7 @@ class PopularFoodDetail extends StatelessWidget {
                                 color:AppColors.iconColor2,
 
                ),
-               child:
+               child: AppColumn(),
             )
 
           )
