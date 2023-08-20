@@ -15,7 +15,7 @@ class PopularFoodDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.iconColor2,
+      backgroundColor:Colors.white,
       body:Stack(
         children: [
           Positioned(
@@ -62,7 +62,7 @@ class PopularFoodDetail extends StatelessWidget {
                   topRight: Radius.circular(Dimensions.radius20),
                   topLeft: Radius.circular(Dimensions.radius20),
                 ),
-                                color:AppColors.iconColor2,
+                                color:Colors.white,
 
                ),
             
