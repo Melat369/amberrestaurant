@@ -55,7 +55,10 @@ class PopularFoodDetail extends StatelessWidget {
             child:Container(
                padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20,top: Dimensions.height20),
                decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Dimensions.radius20),
+                borderRadius: BorderRadius.only( 
+                  topRight: Radius.circular(Dimensions.radius20),
+                  topLeft: Radius.circular(Dimensions.radius20),
+                ),
                 color:AppColors.iconColor2,
                ),
                child:Column(

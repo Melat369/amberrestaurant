@@ -27,7 +27,7 @@ final double size;
       child: Icon(
         icon,
         color:iconColor,
-        size:Dimensions.iconsize16,
+        size:Dimensions.iconsize16, 
       ),
       );
     
