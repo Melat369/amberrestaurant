@@ -33,6 +33,7 @@ class PopularFoodDetail extends StatelessWidget {
                   )
                    
               ),
+              
             )
           ),
           Positioned(
@@ -84,11 +85,31 @@ class PopularFoodDetail extends StatelessWidget {
         height: 120,
         padding: EdgeInsets.only(top:Dimensions.height30, bottom:Dimensions.height30, left:Dimensions.width20, right:Dimensions.width20),
         decoration: BoxDecoration(
-          color: AppColors.yelloColor,
+          color: AppColors.buttonVackgroundColor,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(Dimensions.radius20*2),
             topRight: Radius.circular(Dimensions.radius20*2)
           )
+        ),
+        child:Row(
+          children:[
+            Container(
+              height: Dimensions.height20,
+              width: Dimensions.width15,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.radius20),
+                color:Colors.white
+
+              ),
+              child:Row(
+                children:[
+                  Icon(Icons.remove, color: AppColors.signColor,),
+                  BigText(text: "0",),
+                  Icon(Icons.add, color:AppColors.signColor)
+                ]
+              )
+            )
+          ]
         )
       
       ),
