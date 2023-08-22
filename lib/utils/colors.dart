@@ -12,4 +12,5 @@ class AppColors{
   static final Color mainBlackColor = const Color(0xff332d2);
   static final Color yelloColor = const Color(0xffffd379);
   static final Color lightGrey = const Color(0xffE3F4F4);
+  static final Color black = const Color(0xffffffff);
 }
