@@ -94,21 +94,31 @@ class PopularFoodDetail extends StatelessWidget {
         child:Row(
           children:[
             Container(
-              //height: Dimensions.height20,
-             // width: Dimensions.width15,
+              padding: EdgeInsets.only(top:Dimensions.height20, bottom: Dimensions.height20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radius20),
-                color:Colors.white
+                color:Colors.amber
 
               ),
               child:Row( 
                 children:[
                   Icon(Icons.remove, color: AppColors.textColor,),
+                  SizedBox(width: Dimensions.width10/2,),
                   BigText(text: "0",),
+                  SizedBox(width: Dimensions.width10/2,),
                   Icon(Icons.add, color:AppColors.textColor)
-                ]
+                ],
               )
             )
+         , Container(
+           padding: EdgeInsets.only(top:Dimensions.height20, bottom: Dimensions.height20),
+           child: BigText(text: "\$10 | Add to cart", color: Colors.white),
+           decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(Dimensions.radius20),
+            color: AppColors.mainColor
+           )
+          ),
+
           ]
         )
       
