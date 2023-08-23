@@ -18,6 +18,7 @@ class PopularFoodDetail extends StatelessWidget {
       backgroundColor:Colors.white,
       body:Stack(
         children: [
+          //background image
           Positioned(
             left:0,
             right:0,
@@ -36,6 +37,7 @@ class PopularFoodDetail extends StatelessWidget {
               
             )
           ),
+        //icon widget      
           Positioned(
             top:Dimensions.height45,
             left:Dimensions.width20,
@@ -51,6 +53,7 @@ class PopularFoodDetail extends StatelessWidget {
 
             )
           ,),
+         //food intro
           Positioned(
             left:0,
             right:0,
@@ -73,12 +76,16 @@ class PopularFoodDetail extends StatelessWidget {
                  AppColumn(text: 'Ethiopian Variety',),
                  SizedBox(height: Dimensions.height20,),
                  BigText(text: "Introduction"),
-                 
+
 
                ]),
             )
 
           )
+        ,
+        //Expandable text widget
+        
+        
         ],
       ),
         
