@@ -72,7 +72,8 @@ class PopularFoodDetail extends StatelessWidget {
                 children: [
                  AppColumn(text: 'Ethiopian Variety',),
                  SizedBox(height: Dimensions.height20,),
-                 BigText(text: "Introduction")
+                 BigText(text: "Introduction"),
+                 
 
                ]),
             )
