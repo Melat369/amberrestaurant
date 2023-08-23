@@ -39,6 +39,7 @@ static double listViewImg = screenWidth/3.25;
 static double listViewTextCountSize = screenWidth/3.9;
 //popublar food
 static double popularFoodImgSize = screenHeight/2.4;
-
+//bottom height
+static double bottomHeightBar = screenHeight/6.3;
 
 }
