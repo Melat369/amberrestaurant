@@ -26,7 +26,8 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
 
    
     }else{
-      firstHalf    
+      firstHalf == widget.text;
+      secondHalf = ""
     }
   }
 
