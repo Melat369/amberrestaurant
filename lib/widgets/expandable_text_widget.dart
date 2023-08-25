@@ -1,3 +1,4 @@
+import 'package:amberrestaurant/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/dimensions.dart';
@@ -27,7 +28,7 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
    
     }else{
       firstHalf == widget.text;
-      secondHalf = ""
+      secondHalf = "";
     }
   }
 
@@ -35,6 +36,12 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: secondHalf.isEmpty?SmallText(text: firstHalf):Column(
+        children: [
+          SmallText(text:hiddenText?(firstHalf+"..."):(firstHalf+secondHalf))
+        ],
+      ),
+    );
   }
 }
