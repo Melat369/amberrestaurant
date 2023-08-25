@@ -40,6 +40,16 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
       child: secondHalf.isEmpty?SmallText(text: firstHalf):Column(
         children: [
           SmallText(text:hiddenText?(firstHalf+"..."):(firstHalf+secondHalf))
+          InkWell(autofocus: onTap:(){
+
+,
+child: ROw(
+  children:[ [SmallTExt(text:"Show more", color: AppColors.mainColor)
+  Icon(Icons.arrow drop down);
+  
+  ]]
+)          },)
+        
         ],
       ),
     );
