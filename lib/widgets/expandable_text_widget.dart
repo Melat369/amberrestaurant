@@ -30,8 +30,8 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
       firstHalf == widget.text;
       secondHalf = "";
     }
-  } gdsfhdfhsgfghsgsg
-
+  } 
+    https://www.udemy.com/course/build-backend-api-node-js-and-react-frontend/learn/lecture/33028170#overview
 
 
   @override
